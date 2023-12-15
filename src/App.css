@@ -56,10 +56,21 @@
   gap: 10px;
 }
 
-.inputFunctionality input{
+.green{
   padding: 10px;
   background-color: rgb(0, 0, 0);
-  border: none;
+  border: 1px solid green;
+  color: white;
+  max-width: fit-content;
+  /* margin: auto; */
+  outline: none;
+  font-size: 20px;
+}
+
+.red{
+  padding: 10px;
+  background-color: rgb(0, 0, 0);
+  border: 1px solid red;
   color: white;
   max-width: fit-content;
   /* margin: auto; */
@@ -72,17 +83,18 @@
   font-size: 20px;
 }
 
+
 .inputFunctionality button{
   padding: 10px;
   background-color: rgb(0, 0, 0);
   border: none;
-  color: rgb(0, 183, 255);
+  color: rgb(255, 255, 255);
   border-radius: 10%;
 }
 
 .bottomContents button:hover{
   background-color: rgb(0, 157, 255);
-  color: black;
+  color: rgb(255, 255, 255);
 }
 
 @media screen and ((min-width: 280px) and (max-width: 480px)) {

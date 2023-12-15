@@ -6,17 +6,28 @@ function App() {
 
   const [InputData, setInputData] = useState("");
 
+  const [ListItem, setListItem] = useState([]);
+
+  const [InputField, setInputField] = useState('green')
+
   const trackInput = (event) => {
     setInputData(event.target.value)
   }
 
-  const [ListItem, setListItem] = useState([]);
-
   const AddBtn = () => {
-    setListItem((oldData) => {
-      return [...oldData, InputData]
-    })
-    setInputData("")
+    if (InputData == "") {
+      setInputField('red')
+      setTimeout(() => {
+        alert("Minimum one item required")
+        setInputField('green')
+      }, 0.500)
+    } else {
+      setListItem((oldData) => {
+        return [...oldData, InputData]
+      })
+      setInputData("")
+      
+    }
   }
 
   const DeleteListItems = (id) => {
@@ -33,7 +44,7 @@ function App() {
         <h1>ToDo List</h1>
         <div className="bottomContents">
           <div className="inputFunctionality">
-            <input type="text" placeholder='Add a Items' name="" id="" value={InputData} onChange={trackInput} />
+            <input type="text" placeholder='Add Items' name="" id="" value={InputData} onChange={trackInput} className={InputField} />
             <button onClick={AddBtn}>Add</button>
           </div>
           <ol>
