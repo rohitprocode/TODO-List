@@ -1,0 +1,74 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.Body{
+  height: 100vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 10px;
+  background-color: black;
+}
+
+.todo-app{
+  background-color: rgb(27, 25, 34);
+  width: 20vw;
+  border-radius: 20px;
+  color: white;
+}
+
+.todo-app h1{
+  background-color:rgb(0, 60, 255);
+  margin-top: 1vw;
+  color: white;
+  /* width: max-content; */
+  font-size: 1vw;
+  padding: 1vw 7.8vw;
+  /* outline: 0.1px solid white; */
+}
+
+.bottomContents{
+  padding: 2vw;
+  background-color: rgb(27, 25, 34);
+}
+
+.bottomContents ol{
+  margin: 2vw;
+}
+
+.bottomContents ol li{
+  margin: 10px;
+}
+
+.inputFunctionality{
+  width: 15vw;
+  display: flex;
+  justify-content: space-between;
+  /* background-color: firebrick; */
+}
+
+.inputFunctionality input{
+  padding: 1vh;
+  background-color: rgb(0, 0, 0);
+  border: none;
+  color: white;
+}
+
+.inputFunctionality input::placeholder{
+  color: rgb(255, 255, 255);
+}
+
+.inputFunctionality button{
+  padding: 10px;
+  background-color: rgb(0, 0, 0);
+  border: none;
+  color: rgb(0, 183, 255);
+}
+
+.bottomContents button:hover{
+  background-color: rgb(0, 157, 255);
+  color: black;
+}
