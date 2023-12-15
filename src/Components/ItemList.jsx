@@ -1,17 +1,17 @@
-import React from 'react'
-import './ItemList.css'
+import React from "react";
+import "./ItemList.css";
 
-function ItemList({ListItem,onSelect,id}) {
-
-    const delFunc = () =>{
-        onSelect(id)
-    }
+function ItemList({ ListItem, onSelect, id }) {
+  const delFunc = () => {
+    onSelect(id);
+  };
 
   return (
     <div className="BtnList">
-              <button onClick={delFunc} >X</button>
-              <li>{ListItem}</li>
-              </div>
-            )}
+      <li>{ListItem}</li>
+      <button onClick={delFunc}>X</button>
+    </div>
+  );
+}
 
-export default ItemList
+export default ItemList;

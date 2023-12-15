@@ -19,10 +19,10 @@ function App() {
     setInputData("")
   }
 
-  const DeleteListItems = (id)=>{
-    setListItem((oldData)=>{
-      return oldData.filter((arrElement,index)=>{
-        return index!==id;
+  const DeleteListItems = (id) => {
+    setListItem((oldData) => {
+      return oldData.filter((arrElement, index) => {
+        return index !== id;
       })
     })
   }
@@ -45,7 +45,8 @@ function App() {
                   ListItem={data}
                   onSelect={DeleteListItems}
                 />
-              )})}
+              )
+            })}
           </ol>
         </div>
       </div>
