@@ -5,7 +5,7 @@
 }
 
 .Body{
-  height: 100vh;
+  min-height: 100vh;
   display:flex;
   justify-content: center;
   align-items: center;
@@ -56,16 +56,19 @@
 }
 
 .inputFunctionality input{
-  padding: 4px;
+  padding: 10px;
   background-color: rgb(0, 0, 0);
   border: none;
   color: white;
   max-width: fit-content;
   /* margin: auto; */
+  outline: none;
+  font-size: 20px;
 }
 
 .inputFunctionality input::placeholder{
   color: rgb(255, 255, 255);
+  font-size: 20px;
 }
 
 .inputFunctionality button{
