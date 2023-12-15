@@ -41,6 +41,7 @@
 
 .bottomContents ol li{
   margin: 10px;
+  list-style: none;
 }
 
 .inputFunctionality{
