@@ -20,11 +20,11 @@ function App() {
   }
 
   const DeleteListItems = (id)=>{
-    setListItem( (oldData)=>{
+    setListItem((oldData)=>{
       return oldData.filter((arrElement,index)=>{
-          return index != id
-        })
+        return index!==id;
       })
+    })
   }
 
   return (
